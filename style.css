@@ -1,0 +1,285 @@
+@font-face {
+  font-family: inter;
+  src: url(assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+  font-family: interBold;
+  src: url(assets/fonts/static/Inter-ExtraBold.ttf);
+}
+* {
+  font-family: inter;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#myNav,
+#navBtn {
+  cursor: pointer;
+}
+
+.desktop-web {
+  display: none;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+
+.marginclass {
+  margin: 2%;
+}
+
+.header-links {
+  display: none;
+}
+
+.web3-background {
+  margin-top: 2rem;
+  width: auto;
+}
+
+.web3-background > img {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid red; */
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 1500;
+  font-family: interBold;
+  margin-bottom: 0;
+}
+
+p.aim {
+  font-size: 1.25rem;
+  width: 100%;
+}
+
+button {
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  padding: 10px 20px;
+  width: 50%;
+  color: hsl(36, 100%, 99%);
+  margin: 0;
+}
+
+.new-news {
+  margin-top: 2.5rem;
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  padding: 4%;
+  width: auto;
+  margin-bottom: 3rem;
+}
+
+.new-news > h2 {
+  color: hsl(35, 77%, 62%);
+  margin-top: 0;
+}
+
+.new-news > h3 {
+  font-size: 1.5rem;
+}
+
+.new-news > p {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.news {
+  display: flex;
+  gap: 1rem;
+  margin-top: rem;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 9rem;
+  margin-bottom: 2.5rem;
+}
+
+.news-img__container {
+  /* border: 1px solid red; */
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.news-img__container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-info {
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-info h1 {
+  margin: 0;
+  color: hsl(30, 2%, 52%);
+  opacity: 0.5;
+  font-size: 2.5rem;
+}
+
+.news-info h2 {
+  font-size: 1rem;
+  margin-top: 0.4rem;
+  font-family: interBold;
+}
+
+.news-info p {
+  margin-bottom: 0;
+  margin: 1.5% 0%;
+  line-height: 1.5rem;
+  color: hsl(30, 2%, 52%);
+  font-size: 0.9rem;
+}
+
+.overlayNav {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0%;
+  width: 70%;
+  background-color: white;
+  padding-right: 2%;
+}
+
+.overlays {
+  display: flex;
+  display: none;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  margin-left: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.closeBtn {
+  position: relative;
+  top: 0;
+  margin-top: 0;
+  font-size: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 2rem;
+}
+
+#overLaybackground {
+  position: fixed;
+  /* display: none; */
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: 50s;
+  width: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  margin-top: 2%;
+}
+@media only screen and (min-width: 1040px) {
+  .header-links {
+    display: block;
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+  }
+
+  #navBtn {
+    display: none;
+  }
+  body {
+    /* border: 1px solid red; */
+    overflow-x: hidden;
+  }
+
+  .marginclass {
+    margin: 2% 10%;
+  }
+
+  #hero {
+    width: 1005;
+    display: flex;
+    gap: 1rem;
+  }
+
+  #hero-section {
+    width: 80%;
+    margin: 0;
+  }
+
+  .desktop-web {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+  .new-news {
+    width: 30%;
+    margin: 0;
+  }
+  .mobile-web {
+    display: none;
+  }
+
+  .web3-background {
+    margin: 0;
+  }
+  .hero-text {
+    display: flex;
+    gap: 12px;
+    padding-top: 2rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.6rem;
+    width: 40%;
+    margin-top: 0%;
+  }
+  .aim-section {
+    width: 60%;
+  }
+  .new-news {
+    padding: 4% 1.5%;
+  }
+  .new-news h3 {
+    font-size: 1rem;
+  }
+  .new-news p {
+    font-size: 0.8rem;
+  }
+
+  hr {
+    margin: 30px 0px;
+    line-height: normal;
+  }
+  .last-section {
+    display: flex;
+    margin-top: 5%;
+    gap: 1rem;
+  }
+}
